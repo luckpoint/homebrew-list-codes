@@ -5,21 +5,21 @@
 class ListCodes < Formula
   desc "Source Code Analysis Assistant for LLMs - A CLI tool to collect and format source code for LLM analysis"
   homepage "https://github.com/luckpoint/list-codes"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.0/list-codes_Darwin_x86_64.tar.gz"
-      sha256 "67fb999350f00df0e6164850f6f76d565cfb25590a6b748a05d699e597e37012"
+      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.1/list-codes_Darwin_x86_64.tar.gz"
+      sha256 "1604f5346223450f460c5960d79b25087aea91f1ba9aae9af4a515d6c6136bdb"
 
       def install
         bin.install "list-codes"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.0/list-codes_Darwin_arm64.tar.gz"
-      sha256 "c031277f6dbd68c94b772803314cae2b216a70cccbb36f211d747820a0004973"
+      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.1/list-codes_Darwin_arm64.tar.gz"
+      sha256 "1cfe6378dd21d84800e5ccd3533971504d7d2b07427d4018554a5e3605dca665"
 
       def install
         bin.install "list-codes"
@@ -29,15 +29,15 @@ class ListCodes < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.0/list-codes_Linux_x86_64.tar.gz"
-      sha256 "b07c9750067c1e0dfd914616b71582e8afd79f82922867b5366de61f6a6bfb70"
+      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.1/list-codes_Linux_x86_64.tar.gz"
+      sha256 "3ba3fbb3a271ba7545067407da62e1bb5b7da23f1d8b1dc1e83d1ee0e67ca3bf"
       def install
         bin.install "list-codes"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.0/list-codes_Linux_arm64.tar.gz"
-      sha256 "169301fce8d5b30216b79ccbca647948da1d5320d3aeaaf4a3cf88e475bd422c"
+      url "https://github.com/luckpoint/list-codes/releases/download/v0.5.1/list-codes_Linux_arm64.tar.gz"
+      sha256 "167ba1110ebaf14d011a3c7b5a6dd8c0f91d02ebf309d2a6ed3c3bf600759df2"
       def install
         bin.install "list-codes"
       end
